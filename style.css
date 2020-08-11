@@ -1,0 +1,120 @@
+.contianer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 100px;
+    right:20px;
+    width: 65%;
+}
+
+label{
+    float: right;
+    margin: 0 5px;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+input[type=checkbox] {
+    position: relative;
+    float: right;
+    margin: 0 5px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+div{
+    width: 100%;
+}
+
+svg{
+    height: 70px;
+}
+
+rect{
+    transform: scale(0.6)
+}
+
+.win{
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    position: absolute;
+    margin-top: 50px;
+    left:  69.2vh;
+    width: 15em;
+}
+
+.lose{
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    position: absolute;
+    margin-top: 50px;
+    right: 29vh;
+    width: 15em;
+}
+
+.leftsection, .rightsection {
+    font-family: 'Avenir', 'Roboto', "sans-serif";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.leftsection {
+    color: #45A163;
+}
+
+.rightsection {
+    color: #E0433C; 
+} 
+
+.leftdrivername, .rightdrivername, .NumTag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:    
+        url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/Avenir.svg#Avenir') format('svg');
+  }

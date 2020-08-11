@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Data Visualization</title>
+</head>
+<body>
+  <div>
+    <form id="form">
+      <div id="checkboxlist">
+        <input type="checkbox" id="RepSurveys" name="RepSurveys"/>
+        <label>Rep Surveys</label>
+        <input type="checkbox" id="BuyerSurveys" name="BuyerSurveys"/>
+        <label>Buyer Surveys</label>
+        <input type="checkbox" id="BuyerInterview" name="BuyerInterview" checked/>
+        <label>Buyer Interview</label>
+      </div>
+        <input type="checkbox" id="AllChannels"/>   
+        <label>All Channels</label>
+    </form>
+  </div>
+  
+  <div class="Win">Why We Win</div>
+  <div class="Lose">Why We Lose</div>
+  <div class="contianer">
+    <div class="leftbox">
+    </div>
+    <div class="rightbox">
+    </div>
+  </div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.4/xlsx.full.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
